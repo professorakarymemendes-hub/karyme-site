@@ -5,50 +5,141 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Karyme Siqueira Mendes</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
-body {
+* {
   margin: 0;
-  font-family: Arial;
-  background: #f4f4f4;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header h1 {
+  font-size: 34px;
+}
+
+header p {
+  margin-top: 10px;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #f39c12;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* SEÇÕES */
+section {
+  padding: 60px 20px;
   text-align: center;
 }
 
-header {
-  background: #2c3e50;
-  color: white;
-  padding: 60px;
+.sobre {
+  background: white;
 }
 
-section {
-  padding: 40px;
+.servicos {
+  background: #eef2ff;
 }
 
-.btn {
-  background: #25D366;
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin: 15px;
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* CONTATO */
+.contato {
+  background: white;
+}
+
+/* FOOTER */
+footer {
+  background: #1e3c72;
   color: white;
-  padding: 15px 25px;
-  text-decoration: none;
-  border-radius: 5px;
+  padding: 20px;
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
   <h1>Karyme Siqueira Mendes</h1>
-  <p>Educação</p>
+  <p>Educação com excelência</p>
+  <a class="btn" href="https://wa.me/5591985143610" target="_blank">
+    Fale comigo
+  </a>
 </header>
 
-<section>
+<section class="sobre">
+  <h2>Sobre</h2>
+  <p style="max-width:600px;margin:auto;">
+    Profissional da educação focada no desenvolvimento de alunos, 
+    oferecendo acompanhamento personalizado e estratégias eficientes de aprendizagem.
+  </p>
+</section>
+
+<section class="servicos">
+  <h2>Serviços</h2>
+
+  <div class="cards">
+    <div class="card">📘 Aulas particulares</div>
+    <div class="card">🧠 Reforço escolar</div>
+    <div class="card">📊 Orientação de estudos</div>
+  </div>
+
+</section>
+
+<section class="contato">
   <h2>Contato</h2>
   <p>📞 (91) 98514-3610</p>
   <p>📧 professorakarymemendes@gmail.com</p>
+  <p>📍 Belém - Pará</p>
 
   <a class="btn" href="https://wa.me/5591985143610" target="_blank">
-    Falar no WhatsApp
+    WhatsApp
   </a>
 </section>
+
+<footer>
+  <p>© 2026 - Karyme Siqueira Mendes</p>
+</footer>
 
 </body>
 </html>
